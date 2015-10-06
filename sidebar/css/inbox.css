@@ -1,0 +1,65 @@
+.inbox .pager{
+    margin-top:0px;
+}
+
+.settings{
+    margin-top:-45px;
+}
+
+.page-count{
+    font-size:17px;
+}
+
+.inbox .message{
+    display:block;
+    padding:0px;
+    height:61px;
+    overflow:hidden;
+    margin:0px 10px 0px 10px;
+    border:none;
+    color:#BFBFBD;
+}
+
+.inbox .message .sender-name{
+    color:#8C8B88;
+}
+
+.inbox .message.unread .sender-name{
+    color:#404040;
+    font-weight:bold;
+}
+
+.inbox .message.unread .content{
+    font-weight:bold;
+    font-size:11px;
+    color:#0614E8;
+}
+
+.inbox .message:hover{
+    background-color:#BFBFBF;
+}
+
+.inbox .message .sender{
+    padding-left:0px;
+}
+
+.inbox .message.unread sender{
+    
+}
+
+.inbox .message .sender-pic{
+    height:55px;
+    width:55px;
+    margin:3px;
+}
+
+.inbox .message .content{
+    padding-top:10px;
+    padding-bottom:10px;
+    overflow:hidden;
+    white-space:normal;
+}
+
+.inbox .message .time{
+    padding-top:17px;
+}

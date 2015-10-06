@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="libs/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    <style type="text/css" media="screen">
+        #editor {
+            height: 200px;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar hidden-xs">
+            <ul>
+                <li class="sidebar-logo">
+                    <strong>Code</strong>Space
+                </li>
+                <li>
+                    <img class="img-thumbnail profile-pic" src="img/avatar04.png" class="img-responsive" alt="Image">
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-dashboard"></span>
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-messages">
+                        <span class="glyphicon glyphicon-inbox"></span>
+                        <p>Messages</p>
+                        <span class="label label-success pull-right">7</span>
+                    </a>
+                    <ul id="submenu-messages" class="submenu collapse">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-triangle-right"></span> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-triangle-right"></span> Compose</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" data-toggle="collapse" data-target="#submenu-codes">
+                        <span class="glyphicon glyphicon-file"></span>
+                        <p>Codes</p>
+                    </a>
+
+                    <ul id="submenu-codes" class="submenu collapse">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-triangle-right"></span> New Code</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-triangle-right"></span> Collection</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Navigation bar top fixed -->
+        <div class="navbar navbar-fixed-top">
+            <div class="row container-fluid">
+                <div class="col-sm-6 col-md-6 col-lg-6 hidden-xs">
+                    <form class="input-group navbar-form">
+                        <input type="text" name="search" class="form-control" placeholder="Search for...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">Search</button>
+                        </span>
+                    </form>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-messages">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <strong>John Smith</strong>
+                                            <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                        </div>
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <strong>John Smith</strong>
+                                            <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                        </div>
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <strong>John Smith</strong>
+                                            <span class="pull-right text-muted">
+                                        <em>Yesterday</em>
+                                    </span>
+                                        </div>
+                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a class="text-center" href="#">
+                                        <strong>Read All Messages</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- /.dropdown-messages -->
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-alerts">
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-comment fa-fw"></i> New Comment
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                            <span class="pull-right text-muted small">12 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-tasks fa-fw"></i> New Task
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="#">
+                                        <div>
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                            <span class="pull-right text-muted small">4 minutes ago</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a class="text-center" href="#">
+                                        <strong>See All Alerts</strong>
+                                        <i class="fa fa-angle-right"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">
+                                <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-user">
+                                <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                                </li>
+                                <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                </li>
+                            </ul>
+
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--content-->
+        <div class="main-content">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">New Code</h1>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="sel1">Select list:</label>
+                <select class="form-control" id="sel1">
+                </select>
+            </div>
+
+
+            <div id="editor" class="panel panel-default">// //write your code here</div>
+            <div class="row well well-sm footer">
+                <div class="pull-right">
+                    Copyright Akbros web studio 2015 ltd.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jQuery -->
+    <script src="libs/jquery.js"></script>
+    <script src="js/default.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="libs/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="libs/shortcut.js"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/twilight");
+        editor.getSession().setMode("ace/mode/javascript");
+
+        var themes = ['ambiance', 'chrome', 'clouds', 'chaos', 'clouds_midnight', 'cobalt', 'crimson_editor', 'dawn', 'dreamweaver', 'eclipse', 'github', 'idle_fingers', 'iplastic', 'katzenmilch', 'kr_theme', 'kuroir', 'merbivore', 'merbivore_soft', 'mono_industrial', 'monokai', 'pastel_on_dark', 'solarized_dark', 'sqlserver', 'terminal', 'textmate', 'tomorrow', 'tomorrow_night', 'tomorrow_night_blue', 'tomorrow_night_bright', 'tomorrow_night_eighties', 'twilight', 'vibrant_ink', 'xcode'];
+
+        shortcut.add("Ctrl+S", function() {
+            console.log("script saved..");
+        });
+
+        for (var i = 0; i < themes.length; i++) {
+            th = themes[i];
+            $('#sel1').append("<option>" + th + "</option>")
+        }
+
+        $("#sel1")
+            .change(function() {
+                var lang = "";
+                $("#sel1 option:selected").each(function() {
+                    lang = $(this).text();
+                });
+
+                editor.setTheme("ace/theme/" + lang);
+            })
+            .change();
+    </script>
+
+</body>
+
+</html>

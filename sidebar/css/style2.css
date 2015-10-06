@@ -1,0 +1,146 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ECEBE8;
+}
+
+.sidebar {
+	width: 250px;
+	background-color: #001429;
+	height: 100%;
+	float: none;
+	padding: 0px;
+	position: fixed;
+	transition: width 1s ease;
+}
+
+.sidebar .sidebar-logo {
+	display: block;
+	padding: 2px;
+	font-style: italic;
+	font-size: xx-large;
+	color: #287572;
+	font-stretch: expanded;
+	text-align: center;
+}
+
+.sidebar .sidebar-logo strong {
+	color: #3AA7A2;
+}
+
+.sidebar ul li .profile-pic {
+	display: block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.sidebar ul li img:hover {
+	background-color: #786E6E;
+	border-color: #ACA8A8;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.sidebar > ul > li {
+	border-bottom: 1px solid #3E484C;
+}
+
+.sidebar ul li a {
+	display: block;
+	text-decoration: none;
+	padding: 10px 15px;
+	color: #B8C7CE;
+	position: relative;
+}
+
+.sidebar ul li a:hover {
+	background-color: #0D0D0D;
+	border-left: 3px solid #A0AF12;
+	padding-left: 12px;
+	color: #fff;
+}
+
+.sidebar ul li a .glyphicon {
+	margin-right: 5px;
+	font-size: inherit;
+}
+
+.sidebar ul li a p {
+	display: inline-block;
+	float: none;
+	margin: 5px 0px 5px 0px;
+}
+
+.sidebar ul li a .label {
+	margin-top: 7px;
+}
+
+.sidebar ul li .submenu li a .glyphicon {
+	margin-left: 20px;
+}
+
+.sidebar ul li .submenu li a {
+	border-bottom: none;
+}
+
+.navbar {
+	margin-left: 250px;
+	border-bottom: 1px solid #8C8D91;
+	background-color: #fff;
+}
+
+.navbar input[name="search"] {
+	width: 100%;
+}
+
+.navbar .navbar-nav li a:hover {
+	background-color: #D8D8D8;
+	cursor: pointer;
+}
+
+@media (max-width: 767px) {
+	.navbar {
+		margin-left: 0px;
+	}
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu {
+	right: 0px;
+	left: auto;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-alerts,
+.navbar .navbar-nav .dropdown .dropdown-messages {
+	width: 310px;
+}
+
+.navbar .navbar-nav .dropdown .dropdown-menu li a div {
+	white-space: normal;
+}
+
+.footer {
+	border-radius: 0px;
+	margin-bottom: 0px;
+	margin-top: 5px;
+	margin-left: -30px;
+	margin-right: -30px;
+}
+
+.main-content {
+	padding-left: 280px;
+	padding-top: 50px;
+	padding-right: 30px;
+	background-color: #fff;
+}
+
+.main-content .page-header {
+	border-bottom: 1px solid #eee;
+}

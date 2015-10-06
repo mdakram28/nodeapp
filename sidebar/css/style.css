@@ -1,0 +1,69 @@
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-right: 0;
+    padding-left: 0;
+    background-color: #222D32;
+    overflow: hidden;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.sidebar {
+    z-index: 1;
+    position: absolute;
+    width: 250px;
+    height: 100%;
+}
+
+.sidebar-inner {
+    list-style: none;
+    padding: 0px;
+}
+
+.sidebar-inner li {
+    background-color: #F39C12;
+}
+
+.sidebar-inner li.profile-img img{
+	width: 150px;
+	border-radius: 75px;
+	margin: 50px;
+}
+.sidebar-inner li.profile-img{
+    background-color: #222D32;
+}
+.sidebar-inner li a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #B8C7CE;
+    background-color: #222D32;
+    line-height: 30px;
+}
+
+.sidebar-inner li a:hover {
+    background-color: #1E282C;
+    margin-left: 3px;
+    padding-left: 12px;
+}
+
+a:hover , a:visited , a:focus , a:active{
+	text-decoration: none;
+	border: none;
+}
+
+#navbar-toggle{
+	background-color: transparent;
+	height: 50px;
+	width: 50px;
+	border: none;
+	border-radius: 0px;
+}
+
+#navbar-toggle:hover{
+	background-color: black;
+}
+
+.navbar-header .navbar-brand{
+	width: 250px;
+}
